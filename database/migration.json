@@ -1,0 +1,30 @@
+{
+	"tabel": {
+		"user": [
+			"iduser int(11)",
+			"nama varchar(55)",
+			"email varchar(50)",
+			"password varchar(50)",
+			"status int(1)",
+			"registered int(11)"
+		],
+		"url": [
+			"idurl int(11)",
+			"author text",
+			"url varchar(355)",
+			"title varchar(155)",
+			"hint int(11)",
+			"status int(1)",
+			"added int(11)"
+		]
+	},
+	"atribut": {
+		"primary key": [
+			"user.iduser",
+			"url.idurl"
+		],
+		"unique key": [
+			"user.email"
+		]
+	}
+}

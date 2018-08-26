@@ -1,0 +1,133 @@
+.atas {
+    left: 25%;
+    z-index: 1;
+}
+.atas .judul { margin-left: 2.5%; }
+#tblMenu,#tblMenuMob {
+    float: left;
+    margin-left: 5%;
+    font-size: 22px;
+    cursor: pointer;
+}
+#formCari {
+    margin-right: 5%;
+    width: 30%;
+}
+#formCari .box {
+    width: 98%;
+    font-size: 15px;
+    padding: 0px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+#formCari #search {
+    margin-left: -30px;
+    border: none;
+    background: none;
+}
+#formCari .box:focus { border-bottom: 1px solid #2196f3; }
+#formCari .box:focus ~ #search { color: #2196f3; }
+
+.kiri {
+    position: fixed;
+    top: 0px;left: 0px;bottom: 0px;
+    width: 25%;
+    background-color: #2196f3;
+    color: #fff;
+}
+.kiri a {
+    text-decoration: none;
+    color: #fff;
+}
+.kiri #icon {
+    display: inline-block;
+    width: 40px;
+}
+.kiri li {
+    list-style: none;
+    line-height: 80px;
+    padding: 0px 30px;
+    font-size: 20px;
+    font-family: OLight;
+}
+
+.container {
+    position: absolute;
+    top: 90px;left: 25%;right: 0%;
+    color: #444;
+    margin-bottom: 35px;
+}
+.box { font-size: 17px; }
+
+.container button#save {
+    margin-top: 7px;
+    margin-left: 25px;
+}
+
+.container .link {
+    list-style: none;
+    box-shadow: 1px 1px 5px 1px #ddd;
+    padding: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.container .link p { font-size: 16px; }
+.container .link .wrap { margin: 3.5% 5% 4% 5%; }
+.link a {
+    color: #444;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.link a:hover { color: #2196f3; }
+.link a:hover ~ a { color: #2196f3; }
+.container li#delete {
+    list-style: none;
+    cursor: pointer;
+    transition: 0.44s;
+    font-size: 25px;
+}
+.container li#delete:hover { color: #2196f3; }
+
+#create {
+    position: fixed;
+    bottom: 10%;right: 2.5%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 120px;
+    display: none;
+}
+
+.popup { border-radius: 6px; }
+#tblMenuMob { display: none; }
+#url { width: 78%; }
+
+@media (max-width: 720px) {
+    .atas {
+        left: 0px;
+    }
+    .atas .judul {
+        font-size: 17px;
+    }
+    #tblMenu { display: none; ;}
+    .atas #tblMenuMob {
+        display: block;
+        font-size: 17px;
+    }
+    .container {
+        left: 0%;right: 0%;
+    }
+    .kiri {
+        left: -55%;
+        width: 50%;
+    }
+    #formCari { width: 55%; }
+    #formCari .box { width: 95%; }
+    #url { width: 52%;}
+    .container button#save { margin-left: 10px; }
+    .popup .box { width: 84%; }
+}
